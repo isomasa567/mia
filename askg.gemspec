@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "askg"
   spec.version = Askg::VERSION
   spec.authors = ["isomasa567"]
-  spec.email = [x6v8fwsncd@privaterelay.appleid.com]
+  spec.email = []
 
   spec.summary = "TODO: Write a short summary, because RubyGems requires one."
   spec.description = "TODO: Write a longer description or delete this line."
