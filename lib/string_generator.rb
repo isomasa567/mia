@@ -6,7 +6,7 @@ require 'securerandom'
 module Askg
   class Error < StandardError; end
 
-  class StringGenerator
+  module StringGenerator
 
     # Guidを生成する
     # @return [String] Guid

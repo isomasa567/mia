@@ -3,7 +3,7 @@ require 'uri'
 
 module Askg
   # バリデーションを行うクラス
-  class Validator
+  module Validator
 
     # emailアドレスを正規表現でチェックする
     # @param email [String] emailアドレス
