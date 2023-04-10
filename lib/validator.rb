@@ -35,7 +35,7 @@ module Askg
     # @param url [String] URL
     # @return [Boolean] true:正しいURL, false:不正なURL
     def self.url?(url)
-      res = /\A#{URI::regexp(%w[http https])}\z/ =~ url
+      res = URI::regexp(%w[http https]) =~ url
       res.nil? ? false : true
     end
 
