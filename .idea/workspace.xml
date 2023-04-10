@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d5e2067-431c-4b0c-a468-b54f7d08e8f4" name="変更" comment="change email.">
+    <list default="true" id="3d5e2067-431c-4b0c-a468-b54f7d08e8f4" name="変更" comment="change class to module.">
       <change afterPath="$PROJECT_DIR$/lib/formatter.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/string_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/string_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/validator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/validator.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680956970652</updated>
       <workItem from="1680956972081" duration="8347000" />
-      <workItem from="1680971299929" duration="908000" />
+      <workItem from="1680971299929" duration="1103000" />
     </task>
     <task id="LOCAL-00001" summary="first commit.">
       <created>1680960634034</created>
@@ -217,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680961208222</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change class to module.">
+      <created>1681026917028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681026917028</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +230,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit." />
     <MESSAGE value="change email." />
-    <option name="LAST_COMMIT_MESSAGE" value="change email." />
+    <MESSAGE value="change class to module." />
+    <option name="LAST_COMMIT_MESSAGE" value="change class to module." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/askg@TestStringGenerator.rcov" NAME="TestStringGenerator のカバレッジ結果" MODIFIED="1680959136614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
