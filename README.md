@@ -1,4 +1,4 @@
-# Askg
+# askg
 
 Askg is my development helper library.
 
