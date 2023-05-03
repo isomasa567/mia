@@ -16,4 +16,12 @@ class TestHttpClient < Minitest::Test
     File.delete('test.html')
   end
 
+  def test_post_json
+    client = Askg::HttpClient.new
+    code, message = client.post_json('http://httpbin.org/post', '{"test": "test"}')
+    puts code
+    puts message
+    assert_equal 200, code
+  end
+
 end

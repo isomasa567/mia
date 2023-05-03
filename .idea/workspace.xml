@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d5e2067-431c-4b0c-a468-b54f7d08e8f4" name="変更" comment="change obsolete method.">
-      <change afterPath="$PROJECT_DIR$/lib/http_client.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_http_client.rb" afterDir="false" />
+    <list default="true" id="3d5e2067-431c-4b0c-a468-b54f7d08e8f4" name="変更" comment="add http client class. implemented to download.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/http_client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/http_client.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_http_client.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_http_client.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_download">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_post_json">
     <configuration name="experimental" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="askg" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -139,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_random_string_only_lower" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+    <configuration name="test_post_json" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
       <module name="askg" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Ilib:test" />
@@ -158,10 +157,10 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/test_string_generator.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="$PROJECT_DIR$/test/test_string_generator.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/test/test_http_client.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="$PROJECT_DIR$/test/test_http_client.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="^test_random_string_only_lower$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="^test_post_json$" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -205,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_post_json" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_download" />
         <item itemvalue="Ruby.experimental" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_url" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.TestValidator" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_random_string_only_lower" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +226,8 @@
       <workItem from="1681390564114" duration="2972000" />
       <workItem from="1681393562609" duration="568000" />
       <workItem from="1681394200054" duration="860000" />
-      <workItem from="1682340150080" duration="2812000" />
+      <workItem from="1682340150080" duration="4521000" />
+      <workItem from="1683088897073" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="first commit.">
       <created>1680960634034</created>
@@ -271,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681141657976</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add http client class. implemented to download.">
+      <created>1682343260672</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682343260672</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +291,8 @@
     <MESSAGE value="add formatter" />
     <MESSAGE value="change readme and gemspec." />
     <MESSAGE value="change obsolete method." />
-    <option name="LAST_COMMIT_MESSAGE" value="change obsolete method." />
+    <MESSAGE value="add http client class. implemented to download." />
+    <option name="LAST_COMMIT_MESSAGE" value="add http client class. implemented to download." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -297,6 +305,7 @@
     <SUITE FILE_PATH="coverage/askg@test_random_string_only_lower.rcov" NAME="test_random_string_only_lower のカバレッジ結果" MODIFIED="1680959307095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
     <SUITE FILE_PATH="coverage/askg@test_url.rcov" NAME="test_url のカバレッジ結果" MODIFIED="1681141598443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
     <SUITE FILE_PATH="coverage/askg@experimental.rcov" NAME="experimental のカバレッジ結果" MODIFIED="1681228191155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
+    <SUITE FILE_PATH="coverage/askg@test_post_json.rcov" NAME="test_post_json Coverage Results" MODIFIED="1683088629446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
     <SUITE FILE_PATH="coverage/askg@TestValidator.rcov" NAME="TestValidator のカバレッジ結果" MODIFIED="1681025364715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
     <SUITE FILE_PATH="coverage/askg@test_guid.rcov" NAME="test_guid のカバレッジ結果" MODIFIED="1680959102500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />
     <SUITE FILE_PATH="coverage/askg@lottery.rcov" NAME="lottery のカバレッジ結果" MODIFIED="1680962075606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="askg" />

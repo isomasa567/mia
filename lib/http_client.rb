@@ -11,6 +11,19 @@ module Askg
       @read_timeout = read_timeout
     end
 
+    # post_json
+    # @param uri [String] URI
+    # @param json_str [String] JSON String
+    # @return [Array] [Response Code, Response Message]
+    def post_json(uri, json_str)
+      parsed_uri, http = create(uri, proxy_uri: @proxy_uri, open_timeout: @open_timeout, read_timeout: @read_timeout)
+      req = Net::HTTP::Post.new(parsed_uri.request_uri)
+      req["Content-Type"] = "application/json"
+      req.body = json_str
+      response = http.request(req)
+      [response.code.to_i, response.body]
+    end
+
     # download
     # @param uri [String] URI
     # @param download_path [String] Download Path
