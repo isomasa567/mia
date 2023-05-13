@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'uri'
 
-module Askg
+module Mia
   # バリデーションを行うクラス
   module Validator
 

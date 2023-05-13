@@ -2,7 +2,7 @@
 require 'net/http'
 require 'net/https'
 
-module Askg
+module Mia
   class HttpClient
 
     def initialize(proxy_uri: nil, open_timeout: 5, read_timeout: 5)

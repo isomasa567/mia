@@ -2,7 +2,7 @@
 
 require 'json'
 
-module Askg
+module Mia
   module Formatter
 
     # UnixPath文字列をWindowsPath文字列に変換する

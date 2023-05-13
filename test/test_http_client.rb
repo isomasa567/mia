@@ -6,7 +6,7 @@ require_relative '../lib/http_client'
 class TestHttpClient < Minitest::Test
 
   def test_download
-    client = Askg::HttpClient.new
+    client = Mia::HttpClient.new
     code, message = client.download('https://www.google.com/', 'test.html')
     puts code
     puts message
@@ -17,7 +17,7 @@ class TestHttpClient < Minitest::Test
   end
 
   def test_post_json
-    client = Askg::HttpClient.new
+    client = Mia::HttpClient.new
     code, message = client.post_json('http://httpbin.org/post', '{"test": "test"}')
     puts code
     puts message

@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-require_relative "lib/askg/version"
+require_relative "lib/mia/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "askg"
-  spec.version = Askg::VERSION
+  spec.name = "mia"
+  spec.version = Mia::VERSION
   spec.authors = ["isomasa567"]
   spec.email = []
 
-  spec.summary = "askg gem is my development helper gem."
-  spec.description = "askg is my development helper gem. all implemented in standard library."
-  spec.homepage = 'https://github.com/isomasa567/askg'
+  spec.summary = "mia gem is my development helper gem."
+  spec.description = "mia is my development helper gem. all implemented in standard library."
+  spec.homepage = 'https://github.com/isomasa567/mia'
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = 'https://github.com/isomasa567/askg'
-  spec.metadata["changelog_uri"] = 'https://github.com/isomasa567/askg/README.md'
+  spec.metadata["source_code_uri"] = 'https://github.com/isomasa567/mia'
+  spec.metadata["changelog_uri"] = 'https://github.com/isomasa567/mia/README.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

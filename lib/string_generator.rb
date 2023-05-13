@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "askg/version"
+require_relative "mia/version"
 require 'securerandom'
 
-module Askg
+module Mia
   class Error < StandardError; end
 
   module StringGenerator
